@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Real Estate</title>
+  {% extends 'main/layout.html' %}
+
+  
+</head>
+<body>
+  {% block content %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+
+  <div class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            <img src="{% static 'main/timthumb.jpeg' %}" alt="My image"/>
+        </div>
+      </div>
+    <div class = "row">
+      <div class = "col-md-6">
+        <h4>Chicago is the third largest metropolitan area in the U.S, with almost three million in Chicago and another ten million in the surrounding metro area.  Over the past year, Chicago home values have gone up 3.0% and Zillow predicts they will rise 5.2% within the next year.”
+        <a href="http://www.noradarealestate.com/blog/chicago-real-estate/">SOURCE</a> 
+      </h4>
+      </div>
+      
+      <div class = "col-md-6">
+        <p>
+            Our team understands that deciding at what price to buy a property can be very daunting, even with Chicago’s positive real estate forecast. To help with this decision, using publicly available real estate data and a machine learning model, we present you the listed sale price for a property in Chicago, together with our predicted price, and a note if it’s over or under value.  Use our interactive Chicago map and filters to find your property of interest!
+          </p>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col-md-12">
+        In this site, you can also review and compare median sales price for Chicago properties grouped by ZipCodes (Dec-2017 to Sep-2018) and median list prices for properties across the US (Aug 2018).
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+  
+</body>
+</html>
